@@ -241,6 +241,10 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
     [`dfmt`](https://github.com/Hackerpilot/dfmt)
 - Dart
   - [`dartfmt`](https://www.dartlang.org/tools/)
+- Dhall
+  - [`dhall format`](https://dhall-lang.org)
+- dune
+  - [`dune format`](https://github.com/ocaml/dune)
 - Elixir
   - [mix format](https://hexdocs.pm/mix/master/Mix.Tasks.Format.html)
 - Elm
@@ -257,8 +261,11 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
   - [`hindent`](https://github.com/chrisdone/hindent)
   - [`hfmt`](https://github.com/danstiner/hfmt)
   - [`brittany`](https://github.com/lspitzner/brittany)
+  - [`sort-imports`](https://github.com/evanrelf/sort-imports)
+  - [`floskell`](https://github.com/ennocramer/floskell)
 - HTML
   - `html-beautify` (ships with [`js-beautify`](https://github.com/beautify-web/js-beautify)),
+    [`prettier`](https://github.com/jlongster/prettier),
     [`prettydiff`](https://github.com/prettydiff/prettydiff)
 - Jade
   - [`pug-beautifier`](https://github.com/vingorius/pug-beautifier)
@@ -292,6 +299,8 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
 - Markdown
   - [`remark`](https://github.com/wooorm/remark)
     [`prettier`](https://github.com/prettier/prettier),
+- Nim
+  - nimpretty (ships with [nim](https://nim-lang.org/)),
 - Objective-C
   - [`uncrustify`](http://uncrustify.sourceforge.net),
     [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html),
@@ -318,11 +327,10 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
     [`autopep8`](https://github.com/hhatto/autopep8),
     [`pydevf`](https://github.com/fabioz/PyDev.Formatter),
     [`pyment`](https://github.com/dadadel/pyment)
-    [`black`](https://github.com/ambv/black)
-    [isort](https://github.com/timothycrosley/isort)
-    [docformatter](https://github.com/myint/docformatter)
     [autoflake](https://github.com/myint/autoflake)
-- Reason
+- R
+  - [`styler`](https://github.com/r-lib/styler),
+    [`formatR`](https://github.com/yihui/formatR)
   - [`refmt`](https://github.com/facebook/reason)
 - Ruby
   - [`rufo`](https://github.com/asterite/rufo)
@@ -333,8 +341,11 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
 - Sass
   - [`sass-convert`](http://sass-lang.com/documentation/#executables),
     [`csscomb`](http://csscomb.com)
+- Sbt
+  - [`scalafmt`](http://scalameta.org/scalafmt/)
 - Scala
-  - [`scalariform`](https://github.com/scala-ide/scalariform)
+  - [`scalariform`](https://github.com/scala-ide/scalariform),
+    [`scalafmt`](http://scalameta.org/scalafmt/)
 - SCSS
   - [`sass-convert`](http://sass-lang.com/documentation/#executables),
     [`stylefmt`](https://github.com/morishitter/stylefmt),
@@ -344,6 +355,7 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
 - Shell
   - [`shfmt`](https://github.com/mvdan/sh)
 - SQL
+  - [`sqlfmt`](https://github.com/jackc/sqlfmt)
   - `sqlformat` (ships with [`sqlparse`](https://github.com/andialbrecht/sqlparse))
   - `pg_format` (ships with [`pgFormatter`](https://github.com/darold/pgFormatter))
 - Swift
