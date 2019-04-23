@@ -248,6 +248,10 @@ that caused Neoformat to be invoked.
     [`dfmt`](https://github.com/Hackerpilot/dfmt)
 - Dart
   - [`dartfmt`](https://www.dartlang.org/tools/)
+- Dhall
+  - [`dhall format`](https://dhall-lang.org)
+- dune
+  - [`dune format`](https://github.com/ocaml/dune)
 - Elixir
   - [`mix format`](https://hexdocs.pm/mix/master/Mix.Tasks.Format.html)
 - Elm
@@ -260,12 +264,15 @@ that caused Neoformat to be invoked.
 - GraphQL
   - [`prettier`](https://github.com/prettier/prettier)
 - Haskell
-  - [`stylish-haskell`](https://github.com/jaspervdj/stylish-haskell)
-  - [`hindent`](https://github.com/chrisdone/hindent)
-  - [`hfmt`](https://github.com/danstiner/hfmt)
-  - [`brittany`](https://github.com/lspitzner/brittany)
+  - [`stylish-haskell`](https://github.com/jaspervdj/stylish-haskell),
+    [`hindent`](https://github.com/chrisdone/hindent),
+    [`hfmt`](https://github.com/danstiner/hfmt),
+    [`brittany`](https://github.com/lspitzner/brittany),
+    [`sort-imports`](https://github.com/evanrelf/sort-imports),
+    [`floskell`](https://github.com/ennocramer/floskell)
 - HTML
   - `html-beautify` (ships with [`js-beautify`](https://github.com/beautify-web/js-beautify)),
+    [`prettier`](https://github.com/prettier/prettier),
     [`prettydiff`](https://github.com/prettydiff/prettydiff)
 - Jade
   - [`pug-beautifier`](https://github.com/vingorius/pug-beautifier)
@@ -300,13 +307,15 @@ that caused Neoformat to be invoked.
 - Markdown
   - [`remark`](https://github.com/wooorm/remark)
     [`prettier`](https://github.com/prettier/prettier)
+- Nim
+  - `nimpretty` (ships with [`nim`](https://nim-lang.org/))
 - Objective-C
   - [`uncrustify`](http://uncrustify.sourceforge.net),
     [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html),
     [`astyle`](http://astyle.sourceforge.net)
 - OCaml
-  - [`ocp-indent`](http://www.typerex.org/ocp-indent.html)
-  - [`ocamlformat`](https://github.com/ocaml-ppx/ocamlformat)
+  - [`ocp-indent`](http://www.typerex.org/ocp-indent.html),
+    [`ocamlformat`](https://github.com/ocaml-ppx/ocamlformat)
 - Pandoc Markdown
   - [`pandoc`](https://pandoc.org/MANUAL.html)
 - Pawn
@@ -314,9 +323,9 @@ that caused Neoformat to be invoked.
 - Perl
   - [`perltidy`](http://perltidy.sourceforge.net)
 - PHP
-  - [`php_beautifier`](http://pear.php.net/package/PHP_Beautifier)
-  - [`php-cs-fixer`](http://cs.sensiolabs.org/)
-  - [`phpcbf`](https://github.com/squizlabs/PHP_CodeSniffer)
+  - [`php_beautifier`](http://pear.php.net/package/PHP_Beautifier),
+    [`php-cs-fixer`](http://cs.sensiolabs.org/),
+    [`phpcbf`](https://github.com/squizlabs/PHP_CodeSniffer)
 - Proto
   - [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html)
 - Pug (formally Jade)
@@ -330,17 +339,22 @@ that caused Neoformat to be invoked.
   - [`docformatter`](https://github.com/myint/docformatter)
   - [`pyment`](https://github.com/dadadel/pyment)
   - [`autoflake`](https://github.com/myint/autoflake)
+- R
+  - [`styler`](https://github.com/r-lib/styler),
+    [`formatR`](https://github.com/yihui/formatR)
 - Reason
   - [`refmt`](https://github.com/facebook/reason)
 - Ruby
   - [`rufo`](https://github.com/ruby-formatter/rufo),
-  - [`ruby-beautify`](https://github.com/erniebrodeur/ruby-beautify),
+    [`ruby-beautify`](https://github.com/erniebrodeur/ruby-beautify),
     [`rubocop`](https://github.com/bbatsov/rubocop)
 - Rust
   - [`rustfmt`](https://github.com/rust-lang-nursery/rustfmt)
 - Sass
   - [`sass-convert`](http://sass-lang.com/documentation/#executables),
     [`csscomb`](http://csscomb.com)
+- Sbt
+  - [`scalafmt`](http://scalameta.org/scalafmt/)
 - Scala
   - [`scalariform`](https://github.com/scala-ide/scalariform),
     [`scalafmt`](http://scalameta.org/scalafmt/)
@@ -353,8 +367,9 @@ that caused Neoformat to be invoked.
 - Shell
   - [`shfmt`](https://github.com/mvdan/sh)
 - SQL
-  - `sqlformat` (ships with [sqlparse](https://github.com/andialbrecht/sqlparse))
-  - `pg_format` (ships with [pgFormatter](https://github.com/darold/pgFormatter))
+  - [`sqlfmt`](https://github.com/jackc/sqlfmt),
+    `sqlformat` (ships with [sqlparse](https://github.com/andialbrecht/sqlparse)),
+    `pg_format` (ships with [pgFormatter](https://github.com/darold/pgFormatter))
 - Swift
   - [`Swiftformat`](https://github.com/nicklockwood/SwiftFormat)
 - Terraform
