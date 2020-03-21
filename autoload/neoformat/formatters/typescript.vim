@@ -1,5 +1,5 @@
 function! neoformat#formatters#typescript#enabled() abort
-   return ['tsfmt', 'prettier', 'tslint', 'eslint_d']
+   return ['tsfmt', 'prettier', 'tslint', 'eslint_d', 'clangformat']
 endfunction
 
 function! neoformat#formatters#typescript#tsfmt() abort
@@ -19,9 +19,15 @@ function! neoformat#formatters#typescript#prettier() abort
 endfunction
 
 function! neoformat#formatters#typescript#tslint() abort
+    let args = ['--fix', '--force']
+
+    if filereadable('tslint.json')
+        let args = ['-c tslint.json'] + args
+    endif
+
     return {
         \ 'exe': 'tslint',
-        \ 'args': ['--fix', '-c tslint.json'],
+        \ 'args': args,
         \ 'replace': 1
         \ }
 endfunction
@@ -32,4 +38,12 @@ function! neoformat#formatters#typescript#eslint_d() abort
         \ 'args': ['--stdin', '--stdin-filename', '"%:p"', '--fix-to-stdout'],
         \ 'stdin': 1,
         \ }
+endfunction
+
+function! neoformat#formatters#typescript#clangformat() abort
+    return {
+            \ 'exe': 'clang-format',
+            \ 'args': ['-assume-filename=' . expand('%:t')],
+            \ 'stdin': 1
+            \ }
 endfunction

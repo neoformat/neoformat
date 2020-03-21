@@ -31,7 +31,7 @@ Or specify a certain formatter (must be defined for the current filetype)
 
 Or format a visual selection of code in a different filetype
 
-__Note:__ you must use a ! and pass the filetype of the selection
+**Note:** you must use a ! and pass the filetype of the selection
 
 ```viml
 :Neoformat! python
@@ -239,6 +239,7 @@ that caused Neoformat to be invoked.
   - `css-beautify` (ships with [`js-beautify`](https://github.com/beautify-web/js-beautify)),
     [`prettydiff`](https://github.com/prettydiff/prettydiff),
     [`stylefmt`](https://github.com/morishitter/stylefmt),
+    [`stylelint`](https://stylelint.io/),
     [`csscomb`](http://csscomb.com),
     [`prettier`](https://github.com/prettier/prettier)
 - CSV
@@ -261,6 +262,8 @@ that caused Neoformat to be invoked.
 - Go
   - [`gofmt`](https://golang.org/cmd/gofmt/),
     [`goimports`](https://godoc.org/golang.org/x/tools/cmd/goimports)
+- GLSL
+  - [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html)
 - GraphQL
   - [`prettier`](https://github.com/prettier/prettier)
 - Haskell
@@ -270,6 +273,12 @@ that caused Neoformat to be invoked.
     [`brittany`](https://github.com/lspitzner/brittany),
     [`sort-imports`](https://github.com/evanrelf/sort-imports),
     [`floskell`](https://github.com/ennocramer/floskell)
+    [`ormolu`](https://github.com/tweag/ormolu)
+    ```vim
+    let g:ormolu_ghc_opt=["TypeApplications", "RankNTypes"]
+    ```
+- PureScript
+  - [`purty`](https://gitlab.com/joneshf/purty)
 - HTML
   - `html-beautify` (ships with [`js-beautify`](https://github.com/beautify-web/js-beautify)),
     [`prettier`](https://github.com/prettier/prettier),
@@ -278,8 +287,9 @@ that caused Neoformat to be invoked.
   - [`pug-beautifier`](https://github.com/vingorius/pug-beautifier)
 - Java
   - [`uncrustify`](http://uncrustify.sourceforge.net),
-    [`astyle`](http://astyle.sourceforge.net)
-- Javascript
+    [`astyle`](http://astyle.sourceforge.net),
+    [`prettier`](https://github.com/prettier/prettier)
+- JavaScript
   - [`js-beautify`](https://github.com/beautify-web/js-beautify),
     [`prettier`](https://github.com/prettier/prettier),
     [`prettydiff`](https://github.com/prettydiff/prettydiff),
@@ -295,20 +305,27 @@ that caused Neoformat to be invoked.
     [`jq`](https://stedolan.github.io/jq/),
     [`fixjson`](https://github.com/rhysd/fixjson)
 - Kotlin
-  - [`ktlint`](https://github.com/shyiko/ktlint)
+  - [`ktlint`](https://github.com/shyiko/ktlint),
+    [`prettier`](https://github.com/prettier/prettier)
 - LaTeX
   - [`latexindent`](https://github.com/cmhughes/latexindent.pl)
 - Less
   - [`csscomb`](http://csscomb.com),
     [`prettydiff`](https://github.com/prettydiff/prettydiff),
-    [`prettier`](https://github.com/prettier/prettier)
+    [`prettier`](https://github.com/prettier/prettier),
+    [`stylelint`](https://stylelint.io/)
 - Lua
   - [`luaformatter`](https://github.com/LuaDevelopmentTools/luaformatter)
+  - [`lua-fmt`](https://github.com/trixnz/lua-fmt)
 - Markdown
   - [`remark`](https://github.com/wooorm/remark)
     [`prettier`](https://github.com/prettier/prettier)
+- Matlab
+  - [`matlab-formatter-vscode`](https://github.com/affenwiesel/matlab-formatter-vscode)
 - Nim
   - `nimpretty` (ships with [`nim`](https://nim-lang.org/))
+- Nix
+  - [`nixfmt`](https://github.com/serokell/nixfmt)
 - Objective-C
   - [`uncrustify`](http://uncrustify.sourceforge.net),
     [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html),
@@ -352,6 +369,7 @@ that caused Neoformat to be invoked.
   - [`rustfmt`](https://github.com/rust-lang-nursery/rustfmt)
 - Sass
   - [`sass-convert`](http://sass-lang.com/documentation/#executables),
+    [`stylelint`](https://stylelint.io/),
     [`csscomb`](http://csscomb.com)
 - Sbt
   - [`scalafmt`](http://scalameta.org/scalafmt/)
@@ -360,24 +378,34 @@ that caused Neoformat to be invoked.
     [`scalafmt`](http://scalameta.org/scalafmt/)
 - SCSS
   - [`sass-convert`](http://sass-lang.com/documentation/#executables),
+    [`stylelint`](https://stylelint.io/),
     [`stylefmt`](https://github.com/morishitter/stylefmt),
     [`prettydiff`](https://github.com/prettydiff/prettydiff),
     [`csscomb`](http://csscomb.com),
     [`prettier`](https://github.com/prettier/prettier)
 - Shell
   - [`shfmt`](https://github.com/mvdan/sh)
+    ```vim
+    let g:shfmt_opt="-ci"
+    ```
 - SQL
   - [`sqlfmt`](https://github.com/jackc/sqlfmt),
     `sqlformat` (ships with [sqlparse](https://github.com/andialbrecht/sqlparse)),
     `pg_format` (ships with [pgFormatter](https://github.com/darold/pgFormatter))
+- Starlark
+  - [`buildifier`](https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md)
+- Svelte
+  - [`prettier-plugin-svelte`](https://github.com/UnwrittenFun/prettier-plugin-svelte)
 - Swift
   - [`Swiftformat`](https://github.com/nicklockwood/SwiftFormat)
 - Terraform
   - [`terraform`](https://www.terraform.io/docs/commands/fmt.html),
-- Typescript
+- TypeScript
   - [`tsfmt`](https://github.com/vvakame/typescript-formatter),
     [`prettier`](https://github.com/prettier/prettier),
     [`tslint`](https://palantir.github.io/tslint)
+    [`eslint_d`](https://github.com/mantoni/eslint_d.js)
+    [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html),
 - VALA
   - [`uncrustify`](http://uncrustify.sourceforge.net)
 - Vue
@@ -387,7 +415,8 @@ that caused Neoformat to be invoked.
     [`prettydiff`](https://github.com/prettydiff/prettydiff)
 - XML
   - [`tidy`](http://www.html-tidy.org),
-    [`prettydiff`](https://github.com/prettydiff/prettydiff)
+    [`prettydiff`](https://github.com/prettydiff/prettydiff),
+    [`prettier`](https://github.com/prettier/prettier)
 - YAML
   - [`pyaml`](https://pypi.python.org/pypi/pyaml),
     [`prettier`](https://github.com/prettier/prettier)

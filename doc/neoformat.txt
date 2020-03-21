@@ -233,6 +233,7 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
     [`prettier`](https://github.com/prettier/prettier),
     [`prettydiff`](https://github.com/prettydiff/prettydiff),
     [`stylefmt`](https://github.com/morishitter/stylefmt),
+    [`stylelint`](https://stylelint.io/),
     [`csscomb`](http://csscomb.com)
 - CSV
   - [`prettydiff`](https://github.com/prettydiff/prettydiff)
@@ -254,6 +255,8 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
 - Go
   - [`gofmt`](https://golang.org/cmd/gofmt/),
     [`goimports`](https://godoc.org/golang.org/x/tools/cmd/goimports)
+- GLSL
+  - [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html)
 - GraphQL
   - [`prettier`](https://github.com/prettier/prettier)
 - Haskell
@@ -263,6 +266,10 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
   - [`brittany`](https://github.com/lspitzner/brittany)
   - [`sort-imports`](https://github.com/evanrelf/sort-imports)
   - [`floskell`](https://github.com/ennocramer/floskell)
+  - [`ormolu`](https://github.com/tweag/ormolu)
+    `let g:ormolu_ghc_opt=["TypeApplications", "RankNTypes"]`
+- PureScript
+  - [`purty`](https://gitlab.com/joneshf/purty)
 - HTML
   - `html-beautify` (ships with [`js-beautify`](https://github.com/beautify-web/js-beautify)),
     [`prettier`](https://github.com/jlongster/prettier),
@@ -272,7 +279,7 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
 - Java
   - [`uncrustify`](http://uncrustify.sourceforge.net),
     [`astyle`](http://astyle.sourceforge.net)
-- Javascript
+- JavaScript
   - [`js-beautify`](https://github.com/beautify-web/js-beautify),
     [`prettier`](https://github.com/jlongster/prettier),
     [`prettydiff`](https://github.com/prettydiff/prettydiff),
@@ -293,14 +300,19 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
 - Less
   - [`csscomb`](http://csscomb.com),
     [`prettier`](https://github.com/prettier/prettier),
-    [`prettydiff`](https://github.com/prettydiff/prettydiff)
+    [`prettydiff`](https://github.com/prettydiff/prettydiff),
+    [`stylelint`](https://stylelint.io/)
 - Lua
   - [`luaformatter`](https://github.com/LuaDevelopmentTools/luaformatter)
 - Markdown
   - [`remark`](https://github.com/wooorm/remark)
     [`prettier`](https://github.com/prettier/prettier),
+- Matlab
+  - [`matlab-formatter-vscode`](https://github.com/affenwiesel/matlab-formatter-vscode)
 - Nim
   - nimpretty (ships with [nim](https://nim-lang.org/)),
+- Nix
+  - [`nixfmt`](https://github.com/serokell/nixfmt)
 - Objective-C
   - [`uncrustify`](http://uncrustify.sourceforge.net),
     [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html),
@@ -340,6 +352,7 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
   - [`rustfmt`](https://github.com/rust-lang-nursery/rustfmt)
 - Sass
   - [`sass-convert`](http://sass-lang.com/documentation/#executables),
+    [`stylelint`](https://stylelint.io/),
     [`csscomb`](http://csscomb.com)
 - Sbt
   - [`scalafmt`](http://scalameta.org/scalafmt/)
@@ -349,6 +362,7 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
 - SCSS
   - [`sass-convert`](http://sass-lang.com/documentation/#executables),
     [`stylefmt`](https://github.com/morishitter/stylefmt),
+    [`stylelint`](https://stylelint.io/)
     [`prettier`](https://github.com/prettier/prettier),
     [`prettydiff`](https://github.com/prettydiff/prettydiff),
     [`csscomb`](http://csscomb.com)
@@ -358,14 +372,20 @@ SUPPORTED FILETYPES				*neoformat-supported-filetypes*
   - [`sqlfmt`](https://github.com/jackc/sqlfmt)
   - `sqlformat` (ships with [`sqlparse`](https://github.com/andialbrecht/sqlparse))
   - `pg_format` (ships with [`pgFormatter`](https://github.com/darold/pgFormatter))
+- Starlark
+  - [`buildifier`](https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md)
+- Svelte
+  - [`prettier-plugin-svelte`](https://github.com/UnwrittenFun/prettier-plugin-svelte)
 - Swift
   - [`Swiftformat`](https://github.com/nicklockwood/SwiftFormat)
 - Terraform
   - [`terraform`](https://www.terraform.io/docs/commands/fmt.html)
-- Typescript
+- TypeScript
   - [`tsfmt`](https://github.com/vvakame/typescript-formatter),
     [`prettier`](https://github.com/prettier/prettier),
     [`tslint`](https://palantir.github.io/tslint)
+    [`eslint_d`](https://github.com/mantoni/eslint_d.js)
+    [`clang-format`](http://clang.llvm.org/docs/ClangFormat.html),
 - VALA
   - [`uncrustify`](http://uncrustify.sourceforge.net)
 - Vue
